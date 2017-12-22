@@ -75,8 +75,7 @@ export class GoodsComponent implements OnInit, AfterViewInit {
   }
 
   onToPos(index) {
-    this.curIndex = index;
-    this['scrollRight'].scrollToElement(this.arrList[index], 0);
+    this['scrollRight'].scrollToElement(this.arrList[index], 100);
   }
 
   onShow(food) {

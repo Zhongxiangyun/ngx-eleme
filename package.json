@@ -1,10 +1,11 @@
 {
   "name": "ngx-eleme",
   "version": "1.0.0",
+  "author": "xiaohan <xiaohanadmin@163.com>",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve -o",
+    "start": "ng serve -o --host 0.0.0.0",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,7 +26,7 @@
     "@ngrx/store": "^4.1.1",
     "@ngrx/store-devtools": "^4.1.1",
     "@types/better-scroll": "^1.4.0",
-    "better-scroll": "^1.5.5",
+    "better-scroll": "^1.6.2",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"

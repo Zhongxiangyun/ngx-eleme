@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { RouteReuseStrategy } from '@angular/router';
+import { AppRoutingCache } from './app-routing.cache';
 import { StoreModule } from '@ngrx/store';
 import { appReducer } from './app.store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
@@ -44,7 +46,7 @@ import { CommentComponent } from './components/comment/comment.component';
     StoreDevtoolsModule.instrument(),
     BrowserAnimationsModule // 为防止出现意外bug，此模块建议放在最后一个
   ],
-  providers: [],
+  providers: [{ provide: RouteReuseStrategy, useClass: AppRoutingCache }], // 路由缓存配置
   bootstrap: [AppComponent]
 })
 export class AppModule { }

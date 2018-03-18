@@ -8,7 +8,7 @@ An angular project
 
 > 效果
 
-![Image text](https://raw.githubusercontent.com/chilliness/ngx-eleme/master/src/assets/demo.gif)
+![最终效果](/demo/demo.gif)
 
 > 注意事项
 
